@@ -4,7 +4,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 
 function Hero() {
   return (
-    <section id="hero" className="pb-12 pt-14 sm:pt-28 md:pt-44 flex px-6 lg:px-24">
+    <section id="hero" className="pb-12 pt-4 sm:pt-28 md:pt-44 flex px-6 lg:px-24">
       <div className="self-center">
         <div className="hs-tooltip [--placement:right] w-20 hs-tooltip-toggle">
           <img

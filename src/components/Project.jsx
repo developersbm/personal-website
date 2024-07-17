@@ -1,17 +1,20 @@
 import React from 'react';
 import { CiLink } from "react-icons/ci";
+import { SiGithub } from "react-icons/si";
 import styled from 'styled-components';
 
 const Card = styled.div`
-  height: 500px;
-  width: 600px;
+  height: auto;
+  max-height: 500px;
+  width: 93%;
+  max-width: 600px;
   padding: 20px;
   margin: 20px;
   position: relative;
   overflow: hidden;
   background: black;
   box-shadow: 
-    15px 30px 40px rgba(255, 0, 0, 0.3),
+    15px 15px 20px rgba(255, 0, 0, 0.3),
     inset -20px -20px 25px rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   display: flex;
@@ -56,12 +59,13 @@ const TechnologyBadge = styled.span`
   display: inline-flex;
   align-items: center;
   gap-x: 1.5px;
-  padding: 1.5px 3px;
+  padding: 3px 7px;
   border-radius: 9999px;
   font-size: 12px;
   font-weight: 500;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 15px 1px rgba(255, 0, 0, 0.5);
 `;
 
 const LinkContainer = styled.div`
@@ -77,38 +81,42 @@ const LinkContainer = styled.div`
 function Project({ title, description, image, technologies, link, github }) {
   return (
     <Card>
-      <Upper>
-        <div className="flex gap-2 overflow-x-scroll py-2">
-          {technologies.split(",").map((tech, index) => (
-            <TechnologyBadge key={index}>
-              {tech}
-            </TechnologyBadge>
-          ))}
-        </div>
-      </Upper>
-      <Pra>
-        <Title>{title}</Title>
-        <img className="" src={image} />
-
-        <p className="leading-7 text-zinc-500 dark:text-zinc-300 font-light text-base mt-4">
-          {description}
-        </p>
+    <Upper>
+      <div className="flex gap-2 overflow-x-scroll py-2">
+        {technologies.split(",").map((tech, index) => (
+          <TechnologyBadge key={index}>
+            {tech}
+          </TechnologyBadge>
+        ))}
+      </div>
+    </Upper>
+    <Pra>
+      <Title>{title}</Title>
+      <br/>
+      <img className="opacity-90 rounded-lg" src={"../savor.png"} alt={title} />
+      <p className="leading-7 text-zinc-500 dark:text-zinc-300 font-light text-base mt-4">
+        {description}
+      </p>
+      <div className='flex'>
         <LinkContainer>
-          <a href={link} className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
+          <a href={link} className="flex gap-2 mt-4 mr-5 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
             <CiLink className="text-2xl self-center" />
             <span className="text-xs self-center">
-              View Project
-            </span>
-          </a>
-          <a href={github} className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
-            <CiLink className="text-2xl self-center" />
-            <span className="text-xs self-center">
-              View Github
+              Website
             </span>
           </a>
         </LinkContainer>
-      </Pra>
-    </Card>
+        <LinkContainer>
+          <a href={github} className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
+            <SiGithub className="text-2xl self-center" />
+            <span className="text-xs self-center">
+              Github
+            </span>
+          </a>
+        </LinkContainer>
+      </div>
+    </Pra>
+  </Card>
   );
 }
 
