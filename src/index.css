@@ -16,14 +16,15 @@
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
+  background-color: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #991b1b;
+  background: #b41e1e;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #ff0000;
 }
