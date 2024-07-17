@@ -53,8 +53,8 @@ function Hero() {
             {showContactInfo && (
                   <div className="p-4 border border-gray-300 bg-white w-42 dark:bg-black rounded shadow-lg mr-52 absolute"
                   style={{marginLeft: '15em', marginBottom: '-1em', marginTop: '-4em'}}>                    
-                    <p className="font-medium">Tel: +1 (951)-466-9984</p>
-                    <p className="font-medium">Email: sbastid1@uci.edu</p>
+                    <p className="font-medium">(951)-466-9984</p>
+                    <p className="font-medium">sbastid1@uci.edu</p>
                   </div>
                 )}
 
