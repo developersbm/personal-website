@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 
 import Hero from "../components/sections/Hero.jsx";
 import Projects from "../components/sections/Projects.jsx";
-import PersonalProjects from "../components/sections/PersonalProjects.jsx";
 import Footer from "../components/sections/Footer.jsx";
 import EducationAndExperience from "../components/sections/EducationAndExperience.jsx";
 import Skills from "../components/sections/Skills.jsx";
@@ -30,7 +29,6 @@ function Homepage() {
         <Skills />
 
         <hr className="mt-12 border border-zinc-300 dark:border-zinc-800" />
-        <PersonalProjects />
         <Footer theme={theme} />
       </div>
     </div>
