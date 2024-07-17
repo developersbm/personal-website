@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Card = styled.div`
   height: auto;
-  max-height: 500px;
+  max-height: 450px;
   width: 93%;
   max-width: 600px;
   padding: 20px;
@@ -21,7 +21,7 @@ const Card = styled.div`
   flex-direction: column;
   align-items: flex-start;
   &:hover {
-    border: 1px solid white;
+    box-shadow: 0 0 15px 1px rgba(255, 0, 0, 0.5);
   }
 `;
 
@@ -93,27 +93,31 @@ function Project({ title, description, image, technologies, link, github }) {
     <Pra>
       <Title>{title}</Title>
       <br/>
-      <img className="opacity-90 rounded-lg" src={"../savor.png"} alt={title} />
+      <img className="opacity-90 rounded-lg" src={image} alt={title} />
       <p className="leading-7 text-zinc-500 dark:text-zinc-300 font-light text-base mt-4">
         {description}
       </p>
       <div className='flex'>
+      {link !== "NA" && (
+          <LinkContainer>
+          <a href={link} target="_blank" rel="noopener noreferrer" className="flex gap-2 mt-4 mr-5 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
+          <CiLink className="text-2xl self-center" />
+              <span className="text-xs self-center">
+                Website
+              </span>
+            </a>
+          </LinkContainer>
+        )}
+        {github !== "NA" && (
         <LinkContainer>
-          <a href={link} className="flex gap-2 mt-4 mr-5 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
-            <CiLink className="text-2xl self-center" />
-            <span className="text-xs self-center">
-              Website
-            </span>
-          </a>
-        </LinkContainer>
-        <LinkContainer>
-          <a href={github} className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
-            <SiGithub className="text-2xl self-center" />
+        <a href={github} target="_blank" rel="noopener noreferrer" className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
+        <SiGithub className="text-2xl self-center" />
             <span className="text-xs self-center">
               Github
             </span>
           </a>
         </LinkContainer>
+        )}
       </div>
     </Pra>
   </Card>

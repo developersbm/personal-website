@@ -17,63 +17,63 @@ function Skills() {
       </h4>
       {/* =========== LIST OF SKILLS =========== */}
       <div className="xl:grid-cols-5 gap-9 mt-8 flex flex-wrap justify-center">				<span className="inline-flex items-center justify-between gap-x-2 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaHtml5 className="text-2xl" />
+          <FaHtml5 className="text-2xl" /> HTML
         </span>
 				<span className="inline-flex items-center justify-between gap-x-2 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaCss3Alt className="text-3xl" />
+          <FaCss3Alt className="text-3xl" /> CSS
         </span>
 
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <IoLogoJavascript className="text-2xl" />
+          <IoLogoJavascript className="text-2xl" /> JavaScript
 
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <BiLogoTypescript className="text-2xl" />
+          <BiLogoTypescript className="text-2xl" /> TypeScript
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaPython className="text-2xl" />
+          <FaPython className="text-2xl" /> Python
         </span>
         <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaReact className="text-2xl" />
+          <FaReact className="text-2xl" /> React
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <SiExpress className="text-2xl" />
+          <SiExpress className="text-2xl" /> ExpressJS
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaNodeJs className="text-2xl" />
+          <FaNodeJs className="text-2xl" /> NodeJS
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <SiFlask className="text-2xl" />
+          <SiFlask className="text-2xl" /> Flask
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <SiTailwindcss className="text-2xl" />
+          <SiTailwindcss className="text-2xl" /> TailwindCSS
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaGitAlt className="text-2xl" />
+          <FaGitAlt className="text-2xl" /> Git
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <DiGithubAlt className="text-2xl" />
+          <DiGithubAlt className="text-2xl" /> GitHub
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <CgVercel className="text-2xl" />
+          <CgVercel className="text-2xl" /> Vercel
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <IoLogoFirebase className="text-2xl" />
+          <IoLogoFirebase className="text-2xl" /> FireBase
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <SiPostman className="text-2xl" />
+          <SiPostman className="text-2xl" /> PostMan
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaAws className="text-2xl" />
+          <FaAws className="text-2xl" /> AWS
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <DiMongodb className="text-2xl" />
+          <DiMongodb className="text-2xl" /> MongoDB
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <BiLogoPostgresql className="text-2xl" />
+          <BiLogoPostgresql className="text-2xl" /> PostgresSQL
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaDocker className="text-2xl" />
+          <FaDocker className="text-2xl" /> Docker
         </span>
       </div>
     </section>

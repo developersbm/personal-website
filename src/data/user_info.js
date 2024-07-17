@@ -15,38 +15,51 @@ const info = {
     projects: [
         {
 			title: "Data Structures Visualizer",
-            image: "../savor.png",
-            description: "",
-            technologies: "React, Tailwind, Flask, SpaCy",
+            images: "../dsa.png",
+            description: "Data Structures visualizer web application expected to help +300 students taking a course in Data Structures.",
+            technologies: "Svelte, TypeScript",
 			github: "https://github.com/developersbm/dsa-visualizer",
             link: "https://animated-octo-spork.vercel.app/"
 		},
-
         {
 			title: "Savor",
-            image: "../savor.png",
+            images: "../savor.png",
             description: "AI recipe-generating app, that promotes eco-friendliness and prevent food waste anywhere, anytime.",
-			technologies: "Nuxt, Tailwind, Express, PostgreSQL",
+			technologies: "React, NodeJS, FireBase, Gemini, GCP",
 			github: "https://github.com/developersbm/Savor",
             link: "NA"
 		},
-
         {
 			title: "FinanceBuddy",
-            image: "../savor.png",
-            description: "",
-			technologies: "React, Tailwind, Tensorflow",
+            images: "../fbuddy.png",
+            description: "A website to track income and expenses, predict the stock market, and chat with AI to learn more about money management.",
+			technologies: "React, NodeJS, MongoDB, ExpressJS",
 			github: "https://github.com/developersbm/FinanceBuddy-FinanceTracker",
             link: "NA"
 		},
-
 		{
 			title: "InsightfulLantern",
-            image: "../savor.png",
-			description: "",
-			technologies: "React, Tailwind, Firebase",
+            images: "../insightful.png",
+			description: "A website to provide a safe space for users to share thoughts, advise, and spread positivity without fear of being judged.",
+			technologies: "React, Flask, Firebase, NextJS, GCP",
 			github: "https://github.com/developersbm/InsightfulLantern",
             link: "https://insightfullantern.vercel.app/"
+		},
+        {
+			title: "Classy",
+            images: "../classy.png",
+			description: "3D video game. The video game of my life!",
+			technologies: "UE5, C++, BP, Blender",
+			github: "NA",
+            link: "https://youtu.be/9Mzowr1QtWc?si=K16nsFTotFDCJUOT"
+		},
+        {
+			title: "SoundBoard",
+            images: "../soundboard.png",
+			description: "A catalog of the best audios! You can filter, like them, sort them and even add your own audios!",
+			technologies: "HTML, CSS, JavaScript",
+			github: "https://github.com/developersbm/SnapPlay",
+            link: "https://developersbm.github.io/SnapPlay/"
 		},
     ],
 

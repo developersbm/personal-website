@@ -12,6 +12,7 @@ function Projects() {
           <Project
             key={index}
             title={project.title}
+            image={project.images}
             description={project.description}
             technologies={project.technologies}
             github={project.github}
