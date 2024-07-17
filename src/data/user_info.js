@@ -4,7 +4,7 @@ const info = {
         name: "Sebastian Bastida Marin",
         description: "Computer Science Student @UC Irvine. Software Engineer / Computer Science Tutor at Irvine, California 🇺🇸. Specilized in Software, Full Stack & Web development.",
         socialmedia: "../uci.png",
-        role: "Software Developer",
+        role: "Software Engineer",
         photo: "../foto.png",
         email: "sbastid1@uci.edu",
         linkedin: "https://www.linkedin.com/in/sebastian-bastida/",
@@ -48,7 +48,7 @@ const info = {
         {
 			title: "Classy",
             images: "../classy.png",
-			description: "3D video game. The video game of my life!",
+			description: "3D video game about a monkey who accidentally traveled space to a new planet. Will he survive?",
 			technologies: "UE5, C++, BP, Blender",
 			github: "NA",
             link: "https://youtu.be/9Mzowr1QtWc?si=K16nsFTotFDCJUOT"

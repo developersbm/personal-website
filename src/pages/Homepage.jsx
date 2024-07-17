@@ -9,7 +9,7 @@ import EducationAndExperience from "../components/sections/EducationAndExperienc
 import Skills from "../components/sections/Skills.jsx";
 
 function Homepage() {
-  const { theme, switchTheme } = useContext(AppContext);
+  const { theme } = useContext(AppContext);
   const location = useLocation();
 
   useEffect(() => {

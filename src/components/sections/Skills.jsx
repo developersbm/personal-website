@@ -1,12 +1,12 @@
-import { BiLogoNetlify, BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { CgVercel } from "react-icons/cg";
-import { DiGithubAlt, DiMongodb } from "react-icons/di";
+import { DiMongodb } from "react-icons/di";
 import { FaDocker } from "react-icons/fa";
-import { FaAws, FaCss3Alt, FaDigitalOcean, FaGitAlt, FaGitlab, FaHtml5, FaNodeJs, FaPython, FaReact, FaVuejs } from "react-icons/fa6";
+import { FaAws, FaCss3Alt, FaGitAlt, FaHtml5, FaNodeJs, FaPython, FaReact } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiAntdesign, SiExpress, SiFlask, SiJest, SiNuxtdotjs, SiPassport, SiPostman, SiPythonanywhere, SiSequelize, SiTailwindcss, SiTensorflow } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { SiExpress, SiFlask, SiPostman, SiTailwindcss } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 
 function Skills() {
   return (
@@ -52,7 +52,7 @@ function Skills() {
           <FaGitAlt className="text-2xl" /> Git
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <DiGithubAlt className="text-2xl" /> GitHub
+          <SiGithub className="text-2xl" /> GitHub
         </span>
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
           <CgVercel className="text-2xl" /> Vercel
