@@ -51,10 +51,10 @@ function Hero() {
             </div>
 
             {showContactInfo && (
-                  <div className="p-4 border border-gray-300 bg-white w-42 dark:bg-black rounded shadow-lg mr-52 absolute"
+                  <div className="p-4 border border-gray-300 bg-white w-42 dark:bg-black rounded shadow-lg absolute"
                   style={{marginLeft: '15em', marginBottom: '-1em', marginTop: '-4em'}}>                    
-                    <p className="font-medium">(951)-466-9984</p>
-                    <p className="font-medium">sbastid1@uci.edu</p>
+                    <p className="font-medium text-sm">(951)-466-9984</p>
+                    <p className="font-medium text-sm">sbastid1@uci.edu</p>
                   </div>
                 )}
 
