@@ -2,7 +2,7 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Computer Science Student @UC Irvine. Software Engineer / Computer Science Tutor at Irvine, California 🇺🇸. Specilized in Software, Full Stack & Web development.",
+        description: "Computer Science @UC Irvine. Software Engineer Fellow @HeadStarter. Computer Science Tutor at OCC. Located at Irvine, California 🇺🇸. Specilized in Software, Full Stack & Web development.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../foto.png",

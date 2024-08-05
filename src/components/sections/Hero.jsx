@@ -70,7 +70,7 @@ function Hero() {
 
           <div className="hidden lg:block w-[480px] self-center">
             <img
-              className="rounded-[10%] transform rotate-3"
+              className="rounded-[10%] transform"
               src={user_info.main.photo}
             />
           </div>
