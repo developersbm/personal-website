@@ -2,7 +2,7 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Computer Science @UC Irvine. Software Engineer Fellow @HeadStarter. Computer Science Tutor at OCC. Located at Irvine, California 🇺🇸. Specilized in Software, Full Stack & Web development.",
+        description: "Computer Science @UC Irvine. Software Engineer Intern @HeadStarter. Computer Science Tutor at OCC. Located at Irvine, California 🇺🇸. Specilized in Software, Full Stack & Web development.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../foto.png",
@@ -86,19 +86,6 @@ const info = {
 
     // ============ EXPERIENCE ============
     experience: [
-        /*
-        {
-            position: "LA-Tech.org & Microsoft",
-            company: "Microsoft Tech Career Academy",
-            duration: "Fall 2024",
-            image: "microsoft.png",
-            descriptions: [
-                "Engaged with industry experts from Waymo, Microsoft, and others to gain insights and enhance technical understanding.",
-                "Designed and deployed a comprehensive AWS framework for a med tech company, covering Operating Systems & Servers, Identity & Authentication Services, Networking, Cloud Administration, Security & Monitoring, and Back-Up & Recovery.",
-                "Delivered robust cloud solutions, ensuring high performance, security, and reliability for critical healthcare applications."
-            ]
-        },
-        */
         {
             position: "CodeDay",
             company: "Incoming Software Engineer Intern",
@@ -114,15 +101,15 @@ const info = {
             duration: "June - August (3 Months)",
             image: "headstarter.png",
             descriptions: [
-                "Built 5+ Al apps and APIs using NextJS, OpenAl, Pinecone, StripeAPI with 98% accuracy as seen by 1000 users",
-                "Developed projects from design to deployment leading 4+ engineering fellows using MVC design patterns",
-                "Coached by Amazon, Bloomberg and Capital One engineers on Agile, CI/CD, Git and microservice patterns"
+                "Developed backend solutions using AWS Lambda, DynamoDB, and Cognito to streamline user data management, achieving a 98% accuracy in user placement and reducing data inconsistencies.",
+                "Designed and deployed features with React and NodeJS, integrating OpenAI APIs, resulting in a 98% accuracy rate as confirmed by feedback from over 1,000 users.",
+                "Coached by Amazon, Google, and Microsoft engineers on Agile, CI/CD, Git, and microservice architecture."
             ]
         },
         {
             position: "Orange Coast College",
             company: "Computer Science Tutor",
-            duration: "Jul 2023 - Present (1 Year)",
+            duration: "Jul 2023 - Present (1 Year - 2 Months)",
             image: "orange.png",
             descriptions: [
                 "Led one-on-one and study group sessions with 200+ students learning Data Structures, C++ & Computer Architecture.",
