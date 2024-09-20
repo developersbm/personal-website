@@ -87,18 +87,16 @@ const info = {
     // ============ EXPERIENCE ============
     experience: [
         {
-            position: "CodeDay",
-            company: "Incoming Software Engineer Intern",
-            duration: "Fall 2024 (3 Months)",
-            image: "codeday.png",
-            descriptions: [
-                "Collaborate in a team of 3 with an industry mentor to make significant contributions to open-source projects."
-            ]
+            position: "Orange Coast College",
+            company: "Computer Science Professional Expert",
+            duration: "June 2024 - Present (4 months)",
+            image: "orange.png",
+            descriptions: []
         },
         {
             position: "Headstarter AI",
             company: "Software Engineer Intern",
-            duration: "June - August (3 Months)",
+            duration: "June 2024 - August 2024 (3 Months)",
             image: "headstarter.png",
             descriptions: [
                 "Developed backend solutions using AWS Lambda, DynamoDB, and Cognito to streamline user data management, achieving a 98% accuracy in user placement and reducing data inconsistencies.",
@@ -109,7 +107,7 @@ const info = {
         {
             position: "Orange Coast College",
             company: "Computer Science Tutor",
-            duration: "Jul 2023 - Present (1 Year - 2 Months)",
+            duration: "July 2023 - June 2024 (1 Year)",
             image: "orange.png",
             descriptions: [
                 "Led one-on-one and study group sessions with 200+ students learning Data Structures, C++ & Computer Architecture.",
@@ -120,7 +118,7 @@ const info = {
         {
             position: "Freelance",
             company: "Web Developer",
-            duration: "July. 2021 - August 2022 (1 Year - 2 Months)",
+            duration: "July 2021 - August 2022 (1 Year - 2 Months)",
             image: "freelance.png",
             descriptions: [
                 "Developed and delivered professional templates & websites to +5 clients using HTML, CSS, and JavaScript.",
