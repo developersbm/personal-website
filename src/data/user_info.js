@@ -2,7 +2,7 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Computer Science @UC Irvine. Software Engineer Intern @HeadStarter. Computer Science Tutor at OCC. Located at Irvine, California 🇺🇸. Specilized in Software, Full Stack & Web development.",
+        description: "Computer Science @UC Irvine | Software Engineer Intern @CodeDay | Prev @Headstarter | Computer Science Tutor at OCC | Located at Irvine, California 🇺🇸 | Specilized in Software, Cloud, Full Stack & Web development.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../foto.png",
@@ -77,7 +77,7 @@ const info = {
         {
             school: "University Of California, Irvine",
             degree: "Bachelor of Science, in Computer Science",
-            duration: "Graduation date - 2026",
+            duration: "",
             awards: "Awards: UCI Campuswide Honors Collegium (CHC), Chancellor Excellence Recipient.",
             courses: "Courses: Data Structures, Computer Architecture, C++ Programming, Java Programming, Software Engineering, Calculus Series.",
             image: "uci.png"
@@ -87,22 +87,22 @@ const info = {
     // ============ EXPERIENCE ============
     experience: [
         {
+            position: "CodeDay",
+            company: "Software Engineer Intern",
+            duration: "October 2024 - Present",
+            image: "codeday.png",
+            descriptions: [
+                "Collaborated in a team of 4 making a significant contribution to the open-source project Open Energy Dashboard.",
+                "Implemented a unit test for API functionality using TypeScript, improving test coverage by 25%.",
+                "Implemented data visualizations with PlotlyJS and optimized backend using PostgreSQL and NodeJS."
+            ]
+        },
+        {
             position: "Orange Coast College",
             company: "Computer Science Professional Expert",
             duration: "June 2024 - Present (4 months)",
             image: "orange.png",
             descriptions: []
-        },
-        {
-            position: "Headstarter AI",
-            company: "Software Engineer Intern",
-            duration: "June 2024 - August 2024 (3 Months)",
-            image: "headstarter.png",
-            descriptions: [
-                "Developed backend solutions using AWS Lambda, DynamoDB, and Cognito to streamline user data management, achieving a 98% accuracy in user placement and reducing data inconsistencies.",
-                "Designed and deployed features with React and NodeJS, integrating OpenAI APIs, resulting in a 98% accuracy rate as confirmed by feedback from over 1,000 users.",
-                "Coached by Amazon, Google, and Microsoft engineers on Agile, CI/CD, Git, and microservice architecture."
-            ]
         },
         {
             position: "Orange Coast College",
@@ -113,6 +113,17 @@ const info = {
                 "Led one-on-one and study group sessions with 200+ students learning Data Structures, C++ & Computer Architecture.",
                 "Implemented interactive learning experiences, boosting student comprehension of data structures by 50%, as evidenced by surveys.",
                 "Created engaging lesson plans and materials with professors, leading to a 15% increase in course retention rates, demonstrating improved student comprehension and engagement."
+            ]
+        },
+        {
+            position: "Headstarter AI",
+            company: "Software Engineer Intern",
+            duration: "June 2024 - August 2024 (3 Months)",
+            image: "headstarter.png",
+            descriptions: [
+                "Developed backend solutions using AWS Lambda, DynamoDB, and Cognito to streamline user data management, achieving a 98% accuracy in user placement and reducing data inconsistencies.",
+                "Designed and deployed features with React and NodeJS, integrating OpenAI APIs, resulting in a 98% accuracy rate as confirmed by feedback from over 1,000 users.",
+                "Coached by Amazon, Google, and Microsoft engineers on Agile, CI/CD, Git, and microservice architecture."
             ]
         },
         {
