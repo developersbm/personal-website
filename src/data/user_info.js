@@ -92,9 +92,10 @@ const info = {
             duration: "October 2024 - Present",
             image: "codeday.png",
             descriptions: [
-                "Collaborated in a team of 4 making a significant contribution to the open-source project Open Energy Dashboard.",
-                "Implemented a unit test for API functionality using TypeScript, improving test coverage by 25%.",
-                "Implemented data visualizations with PlotlyJS and optimized backend using PostgreSQL and NodeJS."
+                "Enhanced the Open Energy Dashboard, an open-source tool with 2000+ users, by adopting Agile practices and implementing Plotly.js for intuitive data visualizations, improving insight accessibility.",
+                "Increased dashboard usage by 30%, enabling insights by integrating visualizations for real-time energy data.",
+                "Optimized backend performance by 40% using PostgreSQL and Node.js, with an event-driven approach that ensured faster data processing and consistent deployment via Docker.",
+                "Developed and implemented robust unit tests to validate APIs with boundary testing, ensuring reliable and accurate data delivery for end users."
             ]
         },
         {
@@ -102,7 +103,9 @@ const info = {
             company: "Computer Science Professional Expert",
             duration: "June 2024 - Present (4 months)",
             image: "orange.png",
-            descriptions: []
+            descriptions: [
+                "Promoted to lead classes of Data Structures for 30+ students."
+            ]
         },
         {
             position: "Orange Coast College",
@@ -110,7 +113,7 @@ const info = {
             duration: "July 2023 - June 2024 (1 Year)",
             image: "orange.png",
             descriptions: [
-                "Led one-on-one and study group sessions with 200+ students learning Data Structures, C++ & Computer Architecture.",
+                "Led one-on-one and study group sessions with 250+ students learning Data Structures, C++ & Computer Architecture.",
                 "Implemented interactive learning experiences, boosting student comprehension of data structures by 50%, as evidenced by surveys.",
                 "Created engaging lesson plans and materials with professors, leading to a 15% increase in course retention rates, demonstrating improved student comprehension and engagement."
             ]
@@ -121,8 +124,9 @@ const info = {
             duration: "June 2024 - August 2024 (3 Months)",
             image: "headstarter.png",
             descriptions: [
-                "Developed backend solutions using AWS Lambda, DynamoDB, and Cognito to streamline user data management, achieving a 98% accuracy in user placement and reducing data inconsistencies.",
-                "Designed and deployed features with React and NodeJS, integrating OpenAI APIs, resulting in a 98% accuracy rate as confirmed by feedback from over 1,000 users.",
+                "Led a team of 3 interns in the development of 4 AI applications using Next.js, OpenAI, and Stripe API, delivering user-oriented features with React and Node.js, and earning positive feedback from over 1,000 users.",
+                "Achieved 98% accuracy in user categorization by optimizing serverless architecture with AWS Lambda, DynamoDB, and Amazon Cognito.",
+                "Maintained software efficiency and stability by implementing updates, optimizations, and Git version control.",
                 "Coached by Amazon, Google, and Microsoft engineers on Agile, CI/CD, Git, and microservice architecture."
             ]
         },
