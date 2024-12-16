@@ -2,7 +2,7 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Computer Science @UC Irvine | Software Engineer Intern @CodeDay | Prev @Headstarter | Computer Science Tutor at OCC | Located at Irvine, California 🇺🇸 | Specilized in Software, Cloud, Full Stack & Web development.",
+        description: "Incoming Software Developer Engineer IBM | Computer Science UC Irvine | Prev CodeDay, Headstarter | Located at Irvine, California 🇺🇸 | Specilized in Software, Cloud, Full Stack & Web development.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../foto.png",
@@ -86,6 +86,15 @@ const info = {
 
     // ============ EXPERIENCE ============
     experience: [
+        {
+            position: "IBM",
+            company: "Incoming Software Developer Engineer Intern",
+            duration: "June 2025 - September 2025",
+            image: "ibm.png",
+            descriptions: [
+                "I will be joining the Artificial Intelligence and Data department during Summer 2025."
+            ]
+        },
         {
             position: "CodeDay",
             company: "Software Engineer Intern",

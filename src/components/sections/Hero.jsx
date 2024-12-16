@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 import user_info from "../../data/user_info.js";
 import { IoIosArrowForward } from "react-icons/io";
 import { SiGithub, SiLinkedin } from "react-icons/si";
@@ -21,7 +22,19 @@ function Hero() {
         </div>
         <div className="flex gap-2 align-center flex-wrap md:flex-nowrap">
           <div className="lg:w-[80%] text-zinc-900 dark:text-zinc-100 self-center relative">
-            <h2 className="text-xl">{user_info.main.role}</h2>
+            <h2 className="text-xl">
+              <span>
+                <Typewriter
+                  words={["Software Development Engineer", "Cloud Engineer", "Web/Mobile Developer"]}
+                  loop={true}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={80}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
+            </h2>
             <h1 className="font-black mt-3 text-5xl lg:w-[85%]">
               {user_info.main.name}
             </h1>
@@ -46,17 +59,18 @@ function Hero() {
                   <span className="self-center font-medium">Contact</span>
                   <IoIosArrowForward className="self-center" />
                 </a>
-                
               </div>
             </div>
 
             {showContactInfo && (
-                  <div className="p-4 border border-gray-300 bg-white w-42 dark:bg-black rounded shadow-lg absolute"
-                  style={{marginLeft: '15em', marginBottom: '-1em', marginTop: '-4em'}}>                    
-                    <p className="font-medium text-sm">(951)-466-9984</p>
-                    <p className="font-medium text-sm">sbastid1@uci.edu</p>
-                  </div>
-                )}
+              <div
+                className="p-4 border border-gray-300 bg-white w-42 dark:bg-black rounded shadow-lg absolute"
+                style={{ marginLeft: '15em', marginBottom: '-1em', marginTop: '-4em' }}
+              >
+                <p className="font-medium text-sm">(951)-466-9984</p>
+                <p className="font-medium text-sm">sbastid1@uci.edu</p>
+              </div>
+            )}
 
             <div className="flex gap-4 mt-6">
               <a href={user_info.main.linkedin} target="_blank" rel="noopener noreferrer">
