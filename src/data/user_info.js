@@ -92,7 +92,7 @@ const info = {
             duration: "June 2025 - September 2025",
             image: "ibm.png",
             descriptions: [
-                "I will be joining the Artificial Intelligence and Data department during Summer 2025."
+                "I will join the Artificial Intelligence and Data department during the Summer of 2025."
             ]
         },
         {
@@ -102,8 +102,8 @@ const info = {
             image: "codeday.png",
             descriptions: [
                 "Enhanced the Open Energy Dashboard, an open-source tool with 2000+ users, by adopting Agile practices and implementing Plotly.js for intuitive data visualizations, improving insight accessibility.",
-                "Increased dashboard usage by 30%, enabling insights by integrating visualizations for real-time energy data.",
-                "Optimized backend performance by 40% using PostgreSQL and Node.js, with an event-driven approach that ensured faster data processing and consistent deployment via Docker.",
+                "Increased dashboard usage, enabling users to gain insights and integrate additional visualizations for energy data.",
+                "Optimized backend performance using PostgreSQL and Node.js, with an event-driven approach that ensured faster data processing and consistent deployment via Docker.",
                 "Developed and implemented robust unit tests to validate APIs with boundary testing, ensuring reliable and accurate data delivery for end users."
             ]
         },
@@ -134,20 +134,9 @@ const info = {
             image: "headstarter.png",
             descriptions: [
                 "Led a team of 3 interns in the development of 4 AI applications using Next.js, OpenAI, and Stripe API, delivering user-oriented features with React and Node.js, and earning positive feedback from over 1,000 users.",
-                "Achieved 98% accuracy in user categorization by optimizing serverless architecture with AWS Lambda, DynamoDB, and Amazon Cognito.",
+                "Implemented a serverless authentication system using AWS Lambda, DynamoDB, and Amazon Cognito.",
                 "Maintained software efficiency and stability by implementing updates, optimizations, and Git version control.",
-                "Coached by Amazon, Google, and Microsoft engineers on Agile, CI/CD, Git, and microservice architecture."
-            ]
-        },
-        {
-            position: "Freelance",
-            company: "Web Developer",
-            duration: "July 2021 - August 2022 (1 Year - 2 Months)",
-            image: "freelance.png",
-            descriptions: [
-                "Developed and delivered professional templates & websites to +5 clients using HTML, CSS, and JavaScript.",
-                "Collaborated with diverse international clients, gaining valuable real-world experience.",
-                "Optimized resource allocation and improved project efficiency, contributing to a 30% boost in productivity."
+                "Gained proficiency in Agile, CI/CD, and microservice architecture through coaching from engineers at Amazon, Google, and Microsoft."
             ]
         },
     ],
