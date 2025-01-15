@@ -77,7 +77,7 @@ const info = {
         {
             school: "University Of California, Irvine",
             degree: "Bachelor of Science, in Computer Science",
-            duration: "",
+            duration: "Graduating June 2026",
             awards: "Awards: UCI Campuswide Honors Collegium (CHC), Chancellor Excellence Recipient.",
             courses: "Courses: Data Structures, Computer Architecture, C++ Programming, Java Programming, Software Engineering, Calculus Series.",
             image: "uci.png"
@@ -98,7 +98,7 @@ const info = {
         {
             position: "CodeDay",
             company: "Software Engineer Intern",
-            duration: "October 2024 - Present",
+            duration: "November 2024 - December 2024",
             image: "codeday.png",
             descriptions: [
                 "Enhanced the Open Energy Dashboard, an open-source tool with 2000+ users, by adopting Agile practices and implementing Plotly.js for intuitive data visualizations, improving insight accessibility.",
@@ -110,7 +110,7 @@ const info = {
         {
             position: "Orange Coast College",
             company: "Computer Science Professional Expert",
-            duration: "June 2024 - Present (4 months)",
+            duration: "June 2024 - December 2024 (4 months)",
             image: "orange.png",
             descriptions: [
                 "Promoted to lead classes of Data Structures for 30+ students."
