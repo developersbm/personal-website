@@ -14,6 +14,14 @@ const info = {
     // ============ PROJECTS ============
     projects: [
         {
+			title: "Timely",
+            images: "../Timely.png",
+			description: "A platform to manage events, track savings, plan celebrations, and collaborate through shared calendars!",
+			technologies: "AWS, PostgreSQL, Next, Node, DeepSeek",
+			github: "https://github.com/developersbm/Timely",
+            link: "https://main.d1t5ksosc3rq10.amplifyapp.com/"
+		},
+        {
 			title: "Data Structures Visualizer",
             images: "../dsa.png",
             description: "Data Structures visualizer web application expected to help +300 students taking a course in Data Structures.",
@@ -52,14 +60,6 @@ const info = {
 			technologies: "UE5, C++, BP, Blender",
 			github: "NA",
             link: "https://youtu.be/9Mzowr1QtWc?si=K16nsFTotFDCJUOT"
-		},
-        {
-			title: "SoundBoard",
-            images: "../soundboard.png",
-			description: "A catalog of the best audios! You can filter, like them, sort them and even add your own audios!",
-			technologies: "HTML, CSS, JavaScript",
-			github: "https://github.com/developersbm/SnapPlay",
-            link: "https://developersbm.github.io/SnapPlay/"
 		},
     ],
 
