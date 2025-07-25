@@ -2,7 +2,7 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Incoming Software Developer Engineer IBM | Computer Science UC Irvine | Prev CodeDay, Headstarter | Located at Irvine, California 🇺🇸 | Specilized in Software, Cloud, Full Stack & Web development.",
+        description: "Software Developer Engineer IBM | Computer Science UC Irvine | Prev CodeDay, Headstarter | Located at Irvine, California 🇺🇸 | Specilized in Software, Cloud, Full Stack & Web development.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../foto.png",
@@ -88,11 +88,11 @@ const info = {
     experience: [
         {
             position: "IBM",
-            company: "Incoming Software Developer Engineer Intern",
+            company: "Software Developer Engineer Intern",
             duration: "June 2025 - September 2025",
             image: "ibm.png",
             descriptions: [
-                "I will join the Artificial Intelligence and Data department during the Summer of 2025."
+                "Cloud Pak For Business Automation (CP4BA) - AI & Data department"
             ]
         },
         {
