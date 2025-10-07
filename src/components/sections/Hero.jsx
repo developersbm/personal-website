@@ -43,6 +43,10 @@ function Hero() {
               {user_info.main.description}
             </p>
 
+            <p className="mt-2 dark:text-zinc-300 text-base font-light lg:w-[87%] leading-7">
+              {user_info.main.about}
+            </p>
+
             <div className="flex gap-2 mt-6 relative">
               <a
                 href="#projects"

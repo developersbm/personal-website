@@ -2,7 +2,8 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Software Developer Engineer IBM | Computer Science UC Irvine | Prev CodeDay, Headstarter | Located at Irvine, California 🇺🇸 | Specilized in Software, Cloud, Full Stack & Web development.",
+        description: "Prev. @ IBM | CS + AI UC Irvine | Located in California 🇺🇸",
+        about: "Specialized in Software, Cloud, Full Stack & Web development, AI/ML, DevOps, and modern frameworks.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../foto.png",
@@ -77,7 +78,7 @@ const info = {
         {
             school: "University Of California, Irvine",
             degree: "Bachelor of Science, in Computer Science",
-            duration: "Graduating June 2026",
+            duration: "Graduating March 2026",
             awards: "Awards: UCI Campuswide Honors Collegium (CHC), Chancellor Excellence Recipient.",
             courses: "Courses: Data Structures, Computer Architecture, C++ Programming, Java Programming, Software Engineering, Calculus Series.",
             image: "uci.png"
@@ -87,12 +88,25 @@ const info = {
     // ============ EXPERIENCE ============
     experience: [
         {
+            position: "UCI",
+            company: "Undergraduate Researcher",
+            duration: "September 2025 - Present",
+            image: "uci.png",
+            descriptions: [
+                "Research with Prof. Wayne Hayes."
+            ]
+        },
+        {
             position: "IBM",
             company: "Software Developer Engineer Intern",
             duration: "June 2025 - September 2025",
             image: "ibm.png",
             descriptions: [
-                "Cloud Pak For Business Automation (CP4BA) - AI & Data department"
+                "Developed an authentication service for MCP to automate token generation and validation using Python APIs, eliminating all manual login steps.",
+                "Automated CP4BA UI sanity checks using Playwright and TypeScript, cutting QA validation time by 40%.",
+                "Resolved 10+ developer and customer-reported issues tracked in Jira by reproducing bugs in local Docker environments and delivering Bash-scripted fixes across multiple product versions.",
+                "Built and tested custom Docker images using Jenkins pipelines to validate fixes under deployment scenarios.",
+                "Reported bugs during testing and coordinated with engineers to prevent customer-facing issues before release."
             ]
         },
         {
