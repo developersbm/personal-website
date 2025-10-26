@@ -6,7 +6,7 @@ const info = {
         about: "Specialized in Software, Cloud, Full Stack & Web development, AI/ML, DevOps, and modern frameworks.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
-        photo: "../foto.png",
+        photo: "../newest-profile.png",
         email: "sbastid1@uci.edu",
         linkedin: "https://www.linkedin.com/in/sebastian-bastida/",
         github: "https://github.com/developersbm"
