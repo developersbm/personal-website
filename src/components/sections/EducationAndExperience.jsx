@@ -1,268 +1,260 @@
 import user_info from "../../data/user_info.js";
-import { FaLandmark } from "react-icons/fa";
+import { FaLandmark, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { FaBuildingUser } from "react-icons/fa6";
-import { PiCertificateFill } from "react-icons/pi";
-
+import { PiCertificateFill, PiCertificate } from "react-icons/pi";
 import { SiAmazonaws, SiGithub, SiMicrosoft } from "react-icons/si";
+import { useState } from "react";
 
 function EducationAndExperience() {
+  // State for the Certificates Slider
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const certCount = user_info.certificates.length;
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev === certCount - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev === 0 ? certCount - 1 : prev - 1));
+  };
+
+  // Helper to get the correct icon component
+  const getCertIcon = (iconName) => {
+    switch (iconName) {
+      case "aws": return <SiAmazonaws className="text-orange-500 text-3xl" />;
+      case "github": return <SiGithub className="text-white text-3xl" />;
+      case "microsoft": return <SiMicrosoft className="text-blue-500 text-3xl" />;
+      default: return <PiCertificate className="text-zinc-500 text-3xl" />;
+    }
+  };
+
   return (
-    <section id="education-and-experience" className="mt-20 mx-4 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2">
-      <div className="w-full md:w-[80%]">
-        <h4 className="text-xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-          <FaLandmark className="text-xl text-red-800 dark:text-red-500" />
-          Education
-        </h4>
+    <section id="education-and-experience" className="mt-20 mx-4 lg:mx-20 flex flex-col lg:flex-row gap-8">
+      <div className="w-full lg:w-[55%]">
+        
+        <div className="mb-6">
+          <h4 className="text-2xl font-bold text-white flex gap-3 items-center mb-2">
+            <div className="p-2 bg-red-900/30 rounded-lg">
+              <FaLandmark className="text-xl text-red-500" />
+            </div>
+            Education
+          </h4>
+          <div className="h-1 w-20 bg-gradient-to-r from-red-500 to-red-800 rounded-full"></div>
+        </div>
 
-        {user_info.education.map((edu, index) => {
-          return (
-            <div key={index}>
-              {/* =========== DURATION =========== */}
-              <div className="ps-2 my-2 first:mt-0 !mt-2">
-                <h3 className="text-xs font-medium uppercase text-zinc-500 dark:text-zinc-400">
-                  {edu.duration}
-                </h3>
-              </div>
+        {user_info.education.map((edu, index) => (
+          <div key={index} className="group mb-6">
+            <div className="relative bg-gradient-to-br from-zinc-900 to-black rounded-2xl p-6 border border-zinc-800 hover:border-red-900/50 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/10">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+              
+              <div className="relative z-10">
+                <div className="inline-flex items-center px-3 py-1.5 rounded-lg bg-red-950/40 border border-red-800/50 mb-4">
+                  <span className="text-xs font-semibold text-red-300 uppercase tracking-wide">
+                    {edu.duration}
+                  </span>
+                </div>
 
-              <div className="flex gap-x-3 relative group rounded-lg">
-                <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-zinc-200 dark:after:bg-zinc-700 dark:group-hover:after:bg-zinc-600">
-                  <div className="relative z-10 size-7 flex justify-center items-center">
-                    <div className="size-2 rounded-full bg-white border-2 border-zinc-300 group-hover:border-zinc-600 dark:bg-zinc-800 dark:border-zinc-600 dark:group-hover:border-zinc-600"></div>
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="relative">
+                    <img 
+                      className="w-16 h-16 rounded-xl border-2 border-zinc-800 group-hover:border-red-900/50 transition-all duration-300 object-cover" 
+                      src={edu.image} 
+                      alt="School Logo" 
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-white text-xl mb-2 group-hover:text-red-400 transition-colors duration-300">
+                      {edu.school}
+                    </h3>
+                    <p className="text-zinc-400 font-medium">
+                      {edu.degree}
+                    </p>
                   </div>
                 </div>
-            <div className="grow p-2 pb-8">
-            {/* =========== IMAGE AND SCHOOL NAME =========== */}
-            <div className="flex items-start gap-x-4">
-              <img className="w-12 h-12 rounded-full" src={edu.image} alt="School Logo" />
-              <div>
-                <h3 className="font-semibold text-zinc-800 dark:text-white text-xl">
-                  {edu.school}
-                </h3>
-                <ul className="mt-2 space-y-1">
-                  <li className="flex space-x-3">
-                    <span className="text-lg text-zinc-600 dark:text-zinc-400 mt-1">
-                      {edu.degree}
-                    </span>
-                  </li>
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 size-4 mb-0.5 text-red-800"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <circle cx="12" cy="12" r="6" />
-                    </svg>
-                    <span className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+
+                <div className="space-y-3 pl-2 border-l-2 border-zinc-800 group-hover:border-red-900/50 transition-colors duration-300">
+                  <div className="flex gap-3 pl-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-1.5 h-1.5 rounded-full bg-red-500"></div>
+                    </div>
+                    <span className="text-sm text-zinc-400 leading-relaxed">
                       {edu.awards}
                     </span>
-                  </li>
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 size-4 mt-0.5 text-red-800"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <circle cx="12" cy="12" r="6" />
-                    </svg>
-                    <span className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+                  </div>
+                  <div className="flex gap-3 pl-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-1.5 h-1.5 rounded-full bg-red-500"></div>
+                    </div>
+                    <span className="text-sm text-zinc-400 leading-relaxed">
                       {edu.courses}
                     </span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        ))}
 
+        <div className="mt-10">
 
-              </div>
+        <div className="mb-6">
+          <h4 className="text-2xl font-bold text-white flex gap-3 items-center mb-2">
+            <div className="p-2 bg-red-900/30 rounded-lg">
+              <PiCertificateFill className="text-xl text-red-500" />
             </div>
-          );
-        })}
+            Certificates
+          </h4>
+          <div className="h-1 w-20 bg-gradient-to-r from-red-500 to-red-800 rounded-full"></div>
+        </div>
 
-        {/* =========== CERTIFICATES TITLE =========== */}
-        <h4 className="text-xl dark:text-white mt-6 font-bold flex gap-2 items-center">
-          <PiCertificateFill className="text-2xl text-red-800 dark:text-red-500" />
-          Certificates
-        </h4>
-
-        <div
-          data-hs-carousel='{"loadingClasses": "opacity-0"}'
-          className="relative mt-4"
-        >
-          <div className="hs-carousel relative overflow-hidden w-full h-48 bg-white dark:bg-gray-800 rounded-lg">
-            <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-              {/* =========== CERTIFICATES LIST =========== */}
-              {user_info.certificates.map((cert, index) => {
-                return (
-                  <div className="hs-carousel-slide relative" key={index}>
-                  {
-                    cert.icon === "aws" ? (
-                      <SiAmazonaws className="text-orange-500 absolute right-5 top-0 text-5xl" />
-                    ) : cert.icon === "github" ? (
-                      <SiGithub className="text-black absolute right-5 top-3 text-3xl" />
-                    ) : cert.icon === "microsoft" ? (
-                      <SiMicrosoft className="text-blue-600 absolute right-5 top-3 text-3xl" />
-                    ) : (
-                      <DefaultIcon className="text-gray-500 absolute right-5 top-3 text-3xl" />
-                    )
-                  }
-
-                    <div className="flex justify-center items-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
-                      <div className="hs-tooltip [--placement:bottom] inline-block">
-                        <a href={cert.link} target="_blank" rel="noreferrer" className="hs-tooltip-toggle text-center text-gray-800 dark:text-white hover:text-red-800 hover:dark:text-red-500">
-                          {/* =========== CERTIFICATE NAME =========== */}
-                          <p className=" transition duration-700 px-6 font-bold">
-                            {cert.title}
-                          </p>
-                          {/* =========== CERTIFICATE DESCRIPTION =========== */}
-                          <p className=" transition duration-700 px-6 text-sm">
-                            {cert.description}
-                          </p>
-                        </a>
-
-                        {/* =========== TOOLTIP TEXT =========== */}
-                        <span className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-white border dark:border-zinc-800 dark:bg-zinc-950 text-xs font-medium dark:text-white rounded shadow-sm" role="tooltip">
-                          Open Certificate
+          <div className="relative w-full overflow-hidden bg-zinc-900/50 border border-zinc-800 rounded-2xl p-1">
+            
+            {/* Slider Track */}
+            <div 
+              className="flex transition-transform duration-500 ease-out" 
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {user_info.certificates.map((cert, index) => (
+                <div key={index} className="w-full flex-shrink-0 p-4">
+                  {/* Individual Certificate Card */}
+                  <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 h-full flex flex-col justify-between hover:border-red-500/30 transition-colors duration-300 shadow-lg">
+                    
+                    {/* Header: Icon + Title */}
+                    <div className="flex justify-between items-start mb-4">
+                      <div className="flex-1 pr-4">
+                        <h5 className="text-lg font-bold text-white leading-tight mb-1">
+                          {cert.title}
+                        </h5>
+                        <span className="text-xs font-medium text-red-400 uppercase tracking-wider">
+                          Verified Certificate
                         </span>
                       </div>
+                      <div className="bg-zinc-800 p-2 rounded-lg">
+                        {getCertIcon(cert.icon)}
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
 
-          <button
-            type="button"
-            className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10"
-          >
-            <span className="text-2xl" aria-hidden="true">
-              <svg
-                className="flex-shrink-0 size-5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m15 18-6-6 6-6"></path>
-              </svg>
-            </span>
-            <span className="sr-only">Previous</span>
-          </button>
-          <button
-            type="button"
-            className="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10"
-          >
-            <span className="sr-only">Next</span>
-            <span className="text-2xl" aria-hidden="true">
-              <svg
-                className="flex-shrink-0 size-5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6"></path>
-              </svg>
-            </span>
-          </button>
-          
-          {/* =========== CAROUSEL PAGINATION =========== */}
-          <div className="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
-            {user_info.certificates.map((cert, index) => {
-              return (
-                <span
-                  className="hs-carousel-active:bg-red-700 hs-carousel-active:border-red-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-red-500 dark:hs-carousel-active:border-red-500"
-                  key={index}
-                ></span>
-              );
-            })}
+                    {/* Description */}
+                    <p className="text-sm text-zinc-400 mb-6 line-clamp-3">
+                      {cert.description}
+                    </p>
+
+                    {/* Link Button */}
+                    <a 
+                      href={cert.link} 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center w-full py-2.5 bg-zinc-800 hover:bg-red-900/30 text-white text-sm font-medium rounded-lg border border-zinc-700 hover:border-red-500/50 transition-all duration-300 group"
+                    >
+                      View Credential
+                      <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Navigation Controls (Bottom Bar) */}
+            <div className="flex items-center justify-between px-6 py-3 border-t border-zinc-800/50 bg-zinc-900/80">
+              {/* Pagination Dots */}
+              <div className="flex gap-2">
+                {user_info.certificates.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentSlide(idx)}
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      currentSlide === idx ? "w-8 bg-red-500" : "w-2 bg-zinc-600 hover:bg-zinc-500"
+                    }`}
+                  />
+                ))}
+              </div>
+
+              {/* Prev/Next Buttons */}
+              <div className="flex gap-2">
+                <button 
+                  onClick={prevSlide}
+                  className="p-2 rounded-lg bg-zinc-800 text-white hover:bg-red-600 transition-colors"
+                >
+                  <FaChevronLeft />
+                </button>
+                <button 
+                  onClick={nextSlide}
+                  className="p-2 rounded-lg bg-zinc-800 text-white hover:bg-red-600 transition-colors"
+                >
+                  <FaChevronRight />
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
       
-      {/* =========== EXPERIENCE =========== */}
-      <div className="w-full">
-        {/* =========== EXPERIENCE TITLE =========== */}
-        <h4 className="text-xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-          <FaBuildingUser className="text-2xl text-red-800 dark:text-red-500" />
-          Experience
-        </h4>
+      <div className="w-full lg:w-[45%]">
+        <div className="mb-6">
+          <h4 className="text-2xl font-bold text-white flex gap-3 items-center mb-2">
+            <div className="p-2 bg-red-900/30 rounded-lg">
+              <FaBuildingUser className="text-xl text-red-500" />
+            </div>
+            Experience
+          </h4>
+          <div className="h-1 w-20 bg-gradient-to-r from-red-500 to-red-800 rounded-full"></div>
+        </div>
 
-        <div className="md:h-[505px] md:overflow-y-scroll scroll-smooth">
-          {/* =========== EXPERIENCE LIST =========== */}
-          {user_info.experience.map((exp, index) => {
-            return (
-              <div key={index}>
-                <div className="ps-2 my-2 first:mt-0 !mt-2">
-                  <h3 className="text-xs font-medium uppercase text-zinc-500 dark:text-zinc-400">
-                    {exp.duration}
-                  </h3>
-                </div>
+        <div className="lg:h-[690px] lg:overflow-y-auto scroll-smooth pr-2 space-y-4 custom-scrollbar">
+          {user_info.experience.map((exp, index) => (
+            <div key={index} className="group relative">
+              {/* Timeline connector */}
+              {index !== user_info.experience.length - 1 && (
+                <div className="absolute left-[30px] top-[60px] bottom-[-16px] w-0.5 bg-gradient-to-b from-red-800/50 to-zinc-800"></div>
+              )}
+              
+              <div className="relative bg-gradient-to-br from-zinc-900 to-black rounded-xl p-5 border border-zinc-800 hover:border-red-900/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+                
+                <div className="relative z-10">
+                  <div className="inline-flex items-center px-3 py-1 rounded-lg bg-zinc-800/50 border border-zinc-700 mb-3">
+                    <span className="text-xs font-medium text-zinc-300">
+                      {exp.duration}
+                    </span>
+                  </div>
 
-                <div className="flex gap-x-3 relative group rounded-lg">
-                  <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-zinc-200 dark:after:bg-zinc-700 dark:group-hover:after:bg-zinc-600">
-                    <div className="relative z-10 size-7 flex justify-center items-center">
-                      <div className="size-2 rounded-full bg-white border-2 border-zinc-300 group-hover:border-zinc-600 dark:bg-zinc-800 dark:border-zinc-600 dark:group-hover:border-zinc-600"></div>
+                  <div className="flex items-start gap-3 mb-4">
+                    <div className="relative">
+                      <img 
+                        className="w-12 h-12 rounded-lg border-2 border-zinc-800 group-hover:border-red-900/50 transition-all duration-300 object-cover" 
+                        src={exp.image} 
+                        alt="Company Logo" 
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-white text-lg group-hover:text-red-400 transition-colors duration-300">
+                        {exp.company}
+                      </h3>
+                      <p className="text-sm text-zinc-400 font-medium">
+                        {exp.position}
+                      </p>
                     </div>
                   </div>
 
-                  <div className="grow p-2 pb-8">
-                    {/* =========== COMPANY NAME =========== */}
-                    <h3 className="flex items-center gap-x-2 font-semibold text-zinc-800 dark:text-white">
-                      <img className="w-9 rounded-full" src={exp.image} alt="Company Logo" />
-                      <div className="leading-5">
-                        {exp.company}
-                        {/* =========== POSITION =========== */}
-                        <p className="font-normal text-xs text-zinc-600 dark:text-zinc-400">
-                          {exp.position}
-                        </p>
-                      </div>
-                    </h3>
-                    
-                    <ul className="list-disc list-inside text-zinc-800 dark:text-white mt-2">
-                      {/* =========== DESCRIPTION LIST =========== */}
-                      {exp.descriptions.map((desc, index) => {
-                        return (
-                          <li className="flex space-x-3" key={index}>
-                          <svg
-                            className="flex-shrink-0 size-4 mt-0.5 text-red-800"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                          >
-                            <circle cx="12" cy="12" r="6" />
-                          </svg>
-                          <span className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
-                            {desc}
-                          </span>
-                        </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                  <ul className="space-y-2.5">
+                    {exp.descriptions.map((desc, descIndex) => (
+                      <li className="flex gap-3" key={descIndex}>
+                        <div className="flex-shrink-0 mt-1.5">
+                          <div className="w-1.5 h-1.5 rounded-full bg-red-500"></div>
+                        </div>
+                        <span className="text-sm text-zinc-400 leading-relaxed">
+                          {desc}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>

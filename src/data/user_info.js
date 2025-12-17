@@ -2,8 +2,8 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Prev. @ IBM | CS + AI UC Irvine | Located in California 🇺🇸",
-        about: "Specialized in Software, Cloud, Full Stack & Web development, AI/ML, DevOps, and modern frameworks.",
+        description: "Prev. @ IBM | CS + AI @ UC Irvine | Located in California 🇺🇸",
+        about: "Specialized in Software, Cloud, Full Stack, AI/ML, DevOps. Passionate about building scalable and efficient solutions that drive innovation and enhance user experiences. ",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../newest-profile.png",
@@ -34,7 +34,7 @@ const info = {
 			title: "Savor",
             images: "../savor.png",
             description: "AI recipe-generating app, that promotes eco-friendliness and prevent food waste anywhere, anytime.",
-			technologies: "React, NodeJS, FireBase, Gemini, GCP",
+			technologies: "NodeJS, FireBase, Gemini, GCP",
 			github: "https://github.com/developersbm/Savor",
             link: "NA"
 		},
@@ -180,7 +180,7 @@ const info = {
     // ============ CONTACT ============
 
     // ============ FOOTER ============
-    footer: "© 2024 Sebastian Bastida Marin"
+    footer: "© 2025 Sebastian Bastida Marin"
 }
 
 export default info
