@@ -180,7 +180,7 @@ const info = {
     // ============ CONTACT ============
 
     // ============ FOOTER ============
-    footer: "© 2025 Sebastian Bastida Marin"
+    footer: `© ${new Date().getFullYear()} Sebastian Bastida Marin`
 }
 
 export default info
