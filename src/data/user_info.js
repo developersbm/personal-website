@@ -76,11 +76,20 @@ const info = {
     // ============ EDUCATION ============
     education: [
         {
+            school: "University of Illinois Urbana-Champaign",
+            degree: "Master's in Computer Science",
+            duration: "Jun. 2026 - Dec. 2027",
+            location: "Urbana, IL",
+            specialization: "Specialization in Systems and Networking",
+            image: "uiuc.png"
+        },
+        {
             school: "University Of California, Irvine",
             degree: "Bachelor of Science, in Computer Science",
-            duration: "Graduating March 2026",
-            awards: "Awards: UCI Campuswide Honors Collegium (CHC), Chancellor Excellence Recipient.",
-            courses: "Courses: Data Structures, Computer Architecture, C++ Programming, Java Programming, Software Engineering, Calculus Series.",
+            duration: "Mar. 2026",
+            location: "Irvine, CA",
+            awards: "UCI Campuswide Honors Collegium (CHC) & Chancellor Excellence Recipient",
+            specialization: "Specialization in Intelligent Systems",
             image: "uci.png"
         },
     ],
@@ -88,71 +97,112 @@ const info = {
     // ============ EXPERIENCE ============
     experience: [
         {
-            position: "UCI",
-            company: "Undergraduate Researcher",
-            duration: "September 2025 - Present",
-            image: "uci.png",
-            descriptions: [
-                "Research with Prof. Wayne Hayes."
-            ]
-        },
-        {
-            position: "IBM",
-            company: "Software Developer Engineer Intern",
-            duration: "June 2025 - September 2025",
+            company: "IBM",
             image: "ibm.png",
-            descriptions: [
-                "Developed an authentication service for MCP to automate token generation and validation using Python APIs, eliminating all manual login steps.",
-                "Automated CP4BA UI sanity checks using Playwright and TypeScript, cutting QA validation time by 40%.",
-                "Resolved 10+ developer and customer-reported issues tracked in Jira by reproducing bugs in local Docker environments and delivering Bash-scripted fixes across multiple product versions.",
-                "Built and tested custom Docker images using Jenkins pipelines to validate fixes under deployment scenarios.",
-                "Reported bugs during testing and coordinated with engineers to prevent customer-facing issues before release."
+            roles: [
+                {
+                    title: "Software Engineer",
+                    duration: "Jun. 2026 - Present",
+                    location: "San Jose, CA",
+                    descriptions: [
+                        "Incoming"
+                    ]
+                }
             ]
         },
         {
-            position: "CodeDay",
-            company: "Software Engineer Intern",
-            duration: "November 2024 - December 2024",
+            company: "University of California, Irvine",
+            image: "uci.png",
+            roles: [
+                {
+                    title: "Undergraduate Researcher",
+                    duration: "Sep. 2025 - Mar. 2026",
+                    location: "Irvine, CA",
+                    descriptions: [
+                        "Accelerated multi-threaded sampling throughput by up to 31%, achieving 96% parallel efficiency at 8 threads, by architecting a dynamic work-stealing scheduler using C11 relaxed atomics.",
+                        "Eliminated false-sharing cache bottlenecks and maximized independent core write speeds by enforcing strict 64-byte cache-line alignment and memory padding for hot thread-local structures.",
+                        "Parallelized previously single-threaded stateful MCMC algorithms to run safely across up to 64 logical threads by decoupling shared global variables into isolated thread-local storage states.",
+                        "Guaranteed deterministic execution and eradicated race conditions in precision-based stopping logic by refactoring global counters into per-thread accumulators with a single-step, main-thread reduction."
+                    ]
+                }
+            ]
+        },
+        {
+            company: "IBM",
+            image: "ibm.png",
+            roles: [
+                {
+                    title: "Software Engineer Intern",
+                    duration: "Jun. 2025 - Sep. 2025",
+                    location: "San Jose, CA",
+                    descriptions: [
+                        "Developed an authentication service for MCP to automate token generation and validation using Python APIs, eliminating all manual login steps.",
+                        "Automated CP4BA UI sanity checks using Playwright and TypeScript, cutting QA validation time by 40%.",
+                        "Resolved 10+ developer and customer-reported issues tracked in Jira by reproducing bugs in local Docker environments and delivering Bash-scripted fixes across multiple product versions.",
+                        "Built and tested custom Docker images using Jenkins pipelines to validate fixes under deployment scenarios.",
+                        "Reported bugs during testing and coordinated with engineers to prevent customer-facing issues before release."
+                    ]
+                }
+            ]
+        },
+        {
+            company: "CodeDay",
             image: "codeday.png",
-            descriptions: [
-                "Enhanced the Open Energy Dashboard, an open-source tool with 2000+ users, by adopting Agile practices and implementing Plotly.js for intuitive data visualizations, improving insight accessibility.",
-                "Increased dashboard usage, enabling users to gain insights and integrate additional visualizations for energy data.",
-                "Optimized backend performance using PostgreSQL and Node.js, with an event-driven approach that ensured faster data processing and consistent deployment via Docker.",
-                "Developed and implemented robust unit tests to validate APIs with boundary testing, ensuring reliable and accurate data delivery for end users."
+            roles: [
+                {
+                    title: "Software Engineer Intern",
+                    duration: "Nov. 2024 - Dec. 2024",
+                    location: "Remote",
+                    descriptions: [
+                        "Enhanced the Open Energy Dashboard, an open-source tool with 2000+ users, by adopting Agile practices and implementing Plotly.js for intuitive data visualizations, improving insight accessibility.",
+                        "Increased dashboard usage, enabling users to gain insights and integrate additional visualizations for energy data.",
+                        "Optimized backend performance using PostgreSQL and Node.js, with an event-driven approach that ensured faster data processing and consistent deployment via Docker.",
+                        "Developed and implemented robust unit tests to validate APIs with boundary testing, ensuring reliable and accurate data delivery for end users."
+                    ]
+                }
             ]
         },
         {
-            position: "Orange Coast College",
-            company: "Computer Science Professional Expert",
-            duration: "June 2024 - December 2024 (4 months)",
+            company: "Orange Coast College",
             image: "orange.png",
-            descriptions: [
-                "Promoted to lead classes of Data Structures for 30+ students."
+            roles: [
+                {
+                    title: "Professional Expert",
+                    duration: "Jun. 2024 - Dec. 2024",
+                    location: "Costa Mesa, CA",
+                    descriptions: [
+                        "Promoted to lead classes of Data Structures for 30+ students."
+                    ]
+                },
+                {
+                    title: "Student Assistant",
+                    duration: "Jul. 2023 - Jun. 2024",
+                    location: "Costa Mesa, CA",
+                    descriptions: [
+                        "Led one-on-one and study group sessions with 250+ students learning Data Structures, C++ & Computer Architecture.",
+                        "Implemented interactive learning experiences, boosting student comprehension of data structures by 50%, as evidenced by surveys.",
+                        "Created engaging lesson plans and materials with professors, leading to a 15% increase in course retention rates, demonstrating improved student comprehension and engagement."
+                    ]
+                }
             ]
         },
         {
-            position: "Orange Coast College",
-            company: "Computer Science Tutor",
-            duration: "July 2023 - June 2024 (1 Year)",
-            image: "orange.png",
-            descriptions: [
-                "Led one-on-one and study group sessions with 250+ students learning Data Structures, C++ & Computer Architecture.",
-                "Implemented interactive learning experiences, boosting student comprehension of data structures by 50%, as evidenced by surveys.",
-                "Created engaging lesson plans and materials with professors, leading to a 15% increase in course retention rates, demonstrating improved student comprehension and engagement."
-            ]
-        },
-        {
-            position: "Headstarter AI",
-            company: "Software Engineer Intern",
-            duration: "June 2024 - August 2024 (3 Months)",
+            company: "Headstarter",
             image: "headstarter.png",
-            descriptions: [
-                "Led a team of 3 interns in the development of 4 AI applications using Next.js, OpenAI, and Stripe API, delivering user-oriented features with React and Node.js, and earning positive feedback from over 1,000 users.",
-                "Implemented a serverless authentication system using AWS Lambda, DynamoDB, and Amazon Cognito.",
-                "Maintained software efficiency and stability by implementing updates, optimizations, and Git version control.",
-                "Gained proficiency in Agile, CI/CD, and microservice architecture through coaching from engineers at Amazon, Google, and Microsoft."
+            roles: [
+                {
+                    title: "Software Engineer Intern",
+                    duration: "Jun. 2024 - Aug. 2024",
+                    location: "Remote",
+                    descriptions: [
+                        "Led a team of 3 interns in the development of 4 AI applications using Next.js, OpenAI, and Stripe API, delivering user-oriented features with React and Node.js, and earning positive feedback from over 1,000 users.",
+                        "Implemented a serverless authentication system using AWS Lambda, DynamoDB, and Amazon Cognito.",
+                        "Maintained software efficiency and stability by implementing updates, optimizations, and Git version control.",
+                        "Gained proficiency in Agile, CI/CD, and microservice architecture through coaching from engineers at Amazon, Google, and Microsoft."
+                    ]
+                }
             ]
-        },
+        }
     ],
 
     // ============ CERTIFICATES ============
