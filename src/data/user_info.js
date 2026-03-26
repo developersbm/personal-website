@@ -2,12 +2,12 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Sebastian Bastida Marin",
-        description: "Prev. @ IBM | CS + AI @ UC Irvine | Located in California 🇺🇸",
-        about: "Specialized in Software, Cloud, Full Stack, AI/ML, DevOps. Passionate about building scalable and efficient solutions that drive innovation and enhance user experiences. ",
+        description: "Incoming SWE @ IBM | Master's CS @ UIUC | BS in CS @ UCI | California 🇺🇸",
+        about: "Specialized in Systems, Cloud Infrastructure, and Full Stack Development. Passionate about building high-performance, scalable systems and applying AI/ML to solve engineering problems.",
         socialmedia: "../uci.png",
         role: "Software Engineer",
         photo: "../newest-profile.png",
-        email: "sbastid1@uci.edu",
+        email: "sbastida04@gmail.com",
         linkedin: "https://www.linkedin.com/in/sebastian-bastida/",
         github: "https://github.com/developersbm"
     },
@@ -15,53 +15,53 @@ const info = {
     // ============ PROJECTS ============
     projects: [
         {
-			title: "Timely",
+            title: "Timely",
             images: "../Timely.png",
-			description: "A platform to manage events, track savings, plan celebrations, and collaborate through shared calendars!",
-			technologies: "AWS, PostgreSQL, Next, Node, DeepSeek",
-			github: "https://github.com/developersbm/Timely",
+            description: "A platform to manage events, track savings, plan celebrations, and collaborate through shared calendars!",
+            technologies: "AWS, PostgreSQL, NextJS, NodeJS",
+            github: "https://github.com/developersbm/Timely",
             link: "https://main.d1t5ksosc3rq10.amplifyapp.com/"
-		},
+        },
         {
-			title: "Data Structures Visualizer",
+            title: "Data Structures Visualizer",
             images: "../dsa.png",
             description: "Data Structures visualizer web application expected to help +300 students taking a course in Data Structures.",
             technologies: "Svelte, TypeScript",
-			github: "https://github.com/developersbm/dsa-visualizer",
+            github: "https://github.com/developersbm/dsa-visualizer",
             link: "https://animated-octo-spork.vercel.app/"
-		},
+        },
         {
-			title: "Savor",
+            title: "Savor",
             images: "../savor.png",
             description: "AI recipe-generating app, that promotes eco-friendliness and prevent food waste anywhere, anytime.",
-			technologies: "NodeJS, FireBase, Gemini, GCP",
-			github: "https://github.com/developersbm/Savor",
+            technologies: "NodeJS, FireBase, Gemini, GCP",
+            github: "https://github.com/developersbm/Savor",
             link: "NA"
-		},
+        },
         {
-			title: "FinanceBuddy",
+            title: "FinanceBuddy",
             images: "../fbuddy.png",
             description: "A website to track income and expenses, predict the stock market, and chat with AI to learn more about money management.",
-			technologies: "React, NodeJS, MongoDB, ExpressJS",
-			github: "https://github.com/developersbm/FinanceBuddy-FinanceTracker",
+            technologies: "React, NodeJS, MongoDB, ExpressJS",
+            github: "https://github.com/developersbm/FinanceBuddy-FinanceTracker",
             link: "NA"
-		},
-		{
-			title: "InsightfulLantern",
-            images: "../insightful.png",
-			description: "A website to provide a safe space for users to share thoughts, advise, and spread positivity without fear of being judged.",
-			technologies: "React, Flask, Firebase, NextJS, GCP",
-			github: "https://github.com/developersbm/InsightfulLantern",
-            link: "https://insightfullantern.vercel.app/"
-		},
+        },
         {
-			title: "Classy",
+            title: "InsightfulLantern",
+            images: "../insightful.png",
+            description: "A website to provide a safe space for users to share thoughts, advise, and spread positivity without fear of being judged.",
+            technologies: "React, Flask, Firebase/GCP, NextJS",
+            github: "https://github.com/developersbm/InsightfulLantern",
+            link: "https://insightfullantern.vercel.app/"
+        },
+        {
+            title: "Classy",
             images: "../classy.png",
-			description: "3D video game about a monkey who accidentally traveled space to a new planet. Will he survive?",
-			technologies: "UE5, C++, BP, Blender",
-			github: "NA",
+            description: "3D video game about a monkey who accidentally traveled space to a new planet. Will he survive?",
+            technologies: "UE5, C++, BP, Blender",
+            github: "NA",
             link: "https://youtu.be/9Mzowr1QtWc?si=K16nsFTotFDCJUOT"
-		},
+        },
     ],
 
     personal: [
@@ -84,11 +84,11 @@ const info = {
             image: "uiuc.png"
         },
         {
-            school: "University Of California, Irvine",
+            school: "University of California, Irvine",
             degree: "Bachelor of Science, in Computer Science",
             duration: "Mar. 2026",
             location: "Irvine, CA",
-            awards: "UCI Campuswide Honors Collegium (CHC) & Chancellor Excellence Recipient",
+            awards: "Campuswide Honors Collegium (CHC) & Chancellor’s Excellence Award",
             specialization: "Specialization in Intelligent Systems",
             image: "uci.png"
         },

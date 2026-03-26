@@ -11,7 +11,7 @@ function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-[1400px] mx-auto">
         {user_info.projects.map((project, index) => {
           return (
-            <div 
+            <div
               key={index}
               className="animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}

@@ -7,63 +7,63 @@ function Project({ title, description, image, technologies, link, github }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
-      className="group relative h-full w-full max-w-[600px] mx-auto"
+    <div
+      className="group relative h-full w-full max-w-[600px] mx-auto mt-[-50px]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Card with glassmorphism effect */}
-      <div className="relative h-full bg-gradient-to-br from-zinc-900 via-zinc-900 to-black dark:from-zinc-950 dark:via-zinc-900 dark:to-black rounded-2xl overflow-hidden border border-zinc-800 dark:border-zinc-700 shadow-2xl transition-all duration-500 hover:shadow-red-500/20 hover:shadow-2xl hover:border-red-900/50 hover:-translate-y-2">
-        
-        {/* Animated gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-red-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        
-        {/* Glowing orb effect */}
-        <div className={`absolute -top-24 -right-24 w-48 h-48 bg-red-500/20 rounded-full blur-3xl transition-all duration-700 ${isHovered ? 'opacity-100 scale-150' : 'opacity-0 scale-100'}`}></div>
-        
+      {/* Card */}
+      <div className="relative h-full bg-cream-50 rounded-2xl overflow-hidden border border-cream-300 shadow-sm transition-all duration-500 hover:shadow-xl hover:shadow-cream-400/40 hover:border-cream-400 hover:-translate-y-2">
+
+        {/* Warm gradient overlay on hover */}
+        <div className="absolute inset-0 bg-gradient-to-br from-cream-100/80 via-transparent to-cream-200/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        {/* Ambient glow */}
+        <div className={`absolute -top-24 -right-24 w-48 h-48 bg-cream-300/40 rounded-full blur-3xl transition-all duration-700 ${isHovered ? 'opacity-100 scale-150' : 'opacity-0 scale-100'}`}></div>
+
         <div className="relative z-10 p-6 flex flex-col h-full">
-          
+
           {/* Technology badges */}
           <div className="flex flex-wrap gap-2 mb-4">
             {technologies.split(",").map((tech, index) => (
-              <span 
+              <span
                 key={index}
-                className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-950/40 text-red-300 border border-red-800/50 backdrop-blur-sm hover:bg-red-900/50 hover:border-red-700 transition-all duration-300"
+                className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium font-mono-code bg-cream-200 text-zinc-700 border border-cream-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 transition-all duration-300"
               >
                 {tech.trim()}
               </span>
             ))}
           </div>
 
-          {/* Project image with overlay effect */}
-          <div className="relative rounded-xl overflow-hidden mb-4 shadow-lg group/img">
-            <img 
-              className="w-full h-48 object-cover transition-all duration-500 group-hover/img:scale-110" 
-              src={image} 
-              alt={title} 
+          {/* Project image */}
+          <div className="relative rounded-xl overflow-hidden mb-4 shadow-sm group/img border border-cream-200">
+            <img
+              className="w-full h-64 object-cover transition-all duration-500 group-hover/img:scale-110"
+              src={image}
+              alt={title}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/40 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity duration-300"></div>
           </div>
 
-          {/* Title with animated underline */}
-          <h3 className="text-2xl font-bold text-white mb-3 relative inline-block">
+          {/* Title */}
+          <h3 className="text-2xl font-bold text-zinc-900 mb-3 relative inline-block">
             {title}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-700 group-hover:w-full transition-all duration-500"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-zinc-800 to-cream-500 group-hover:w-full transition-all duration-500"></span>
           </h3>
 
           {/* Description */}
-          <p className="text-zinc-400 dark:text-zinc-400 leading-relaxed text-sm mb-6 flex-grow">
+          <p className="text-zinc-800 leading-relaxed text-sm mb-6 flex-grow">
             {description}
           </p>
 
-          {/* Links with improved styling */}
+          {/* Links */}
           <div className="flex gap-4 mt-auto">
             {link !== "NA" && (
-              <a 
-                href={link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="group/link flex items-center gap-2 px-4 py-2 rounded-lg bg-red-950/30 border border-red-800/50 text-red-300 hover:bg-red-900/50 hover:border-red-600 hover:text-red-200 transition-all duration-300 hover:gap-3"
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/link flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-800 text-white hover:bg-zinc-700 hover:border-zinc-600 transition-all duration-300 hover:gap-3"
               >
                 <CiLink className="text-xl" />
                 <span className="text-sm font-medium">Live Demo</span>
@@ -71,11 +71,11 @@ function Project({ title, description, image, technologies, link, github }) {
               </a>
             )}
             {github !== "NA" && (
-              <a 
-                href={github} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="group/link flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-800/50 border border-zinc-700 text-zinc-300 hover:bg-zinc-700/50 hover:border-zinc-600 hover:text-white transition-all duration-300 hover:gap-3"
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/link flex items-center gap-2 px-4 py-2 rounded-lg bg-cream-100 border border-cream-300 text-zinc-900 hover:bg-cream-200 hover:border-cream-400 hover:text-zinc-900 transition-all duration-300 hover:gap-3"
               >
                 <SiGithub className="text-lg" />
                 <span className="text-sm font-medium">Code</span>
@@ -86,8 +86,8 @@ function Project({ title, description, image, technologies, link, github }) {
         </div>
       </div>
 
-      {/* Subtle glow effect on hover */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-red-600/10 to-red-900/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      {/* Glow on hover */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cream-300/30 to-cream-400/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
     </div>
   );
 }

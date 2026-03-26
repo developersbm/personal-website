@@ -17,18 +17,19 @@ function Homepage() {
   }, [location.pathname]);
 
   return (
-    <div className="bg-zinc-100 dark:bg-zinc-900 bg-black">
-      <div className="xl:w-[1340px] md:mx-auto h-full border-x border-zinc-100 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+    <div className="bg-cream-200">
+      <div className="xl:w-[1340px] md:mx-auto h-full border-x border-cream-300 bg-cream-100">
 
         <Hero />
-				<EducationAndExperience />
-        <h4 className="text-4xl font-bold text-center mt-20 mb-10 dark:text-white">
-        Projects
+        <EducationAndExperience />
+        <h4 className="text-4xl font-bold text-center mt-20 mb-10 text-zinc-900">
+          <span className="font-mono-code text-stone-400 text-3xl mr-2">&lt;</span>Projects<span className="font-mono-code text-stone-400 text-3xl ml-2">/&gt;</span>
+          <p className="font-mono-code text-xs text-cream-500 mt-2 tracking-widest">&#47;&#47; some of my best projects</p>
         </h4>
         <Projects />
         <Skills />
 
-        <hr className="mt-12 border border-zinc-300 dark:border-zinc-800" />
+        <hr className="mt-12 border border-cream-300" />
         <Footer theme={theme} />
       </div>
     </div>

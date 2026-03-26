@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Heebo", sans-serif;
+  font-family: "Inter", sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+}
+
+.font-mono-code {
+  font-family: "JetBrains Mono", monospace;
 }
 
 /* Fade in animation for project cards */
@@ -33,17 +37,17 @@
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: black;
+  background-color: #f0e6b0;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b41e1e;
+  background: #3f3f46;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff0000;
+  background: #18181b;
 }
 
 /* Custom scrollbar for experience section */
@@ -52,16 +56,16 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(24, 24, 27, 0.5);
+  background: rgba(240, 230, 176, 0.5);
   border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #b91c1c 0%, #7f1d1d 100%);
+  background: linear-gradient(180deg, #3f3f46 0%, #18181b 100%);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #dc2626 0%, #991b1b 100%);
+  background: linear-gradient(180deg, #27272a 0%, #09090b 100%);
 }
