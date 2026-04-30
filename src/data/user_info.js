@@ -15,6 +15,14 @@ const info = {
     // ============ PROJECTS ============
     projects: [
         {
+            title: "TableTalk",
+            images: "../tabletalk.png",
+            description: "AI research project evaluating uncertainty in LLM generated code for Python and SQL.",
+            technologies: "Python, LLM Models, HPC, ML, AI",
+            github: "https://github.com/developersbm/TableTalk",
+            link: "NA"
+        },
+        {
             title: "Timely",
             images: "../Timely.png",
             description: "A platform to manage events, track savings, plan celebrations, and collaborate through shared calendars!",
@@ -36,6 +44,7 @@ const info = {
             description: "AI recipe-generating app, that promotes eco-friendliness and prevent food waste anywhere, anytime.",
             technologies: "NodeJS, FireBase, Gemini, GCP",
             github: "https://github.com/developersbm/Savor",
+            videolink: "https://youtu.be/KScPfhTnDr8",
             link: "NA"
         },
         {
@@ -44,7 +53,7 @@ const info = {
             description: "A website to track income and expenses, predict the stock market, and chat with AI to learn more about money management.",
             technologies: "React, NodeJS, MongoDB, ExpressJS",
             github: "https://github.com/developersbm/FinanceBuddy-FinanceTracker",
-            link: "NA"
+            link: "https://finance-buddy-finance-tracker.vercel.app"
         },
         {
             title: "InsightfulLantern",
@@ -54,14 +63,15 @@ const info = {
             github: "https://github.com/developersbm/InsightfulLantern",
             link: "https://insightfullantern.vercel.app/"
         },
-        {
-            title: "Classy",
-            images: "../classy.png",
-            description: "3D video game about a monkey who accidentally traveled space to a new planet. Will he survive?",
-            technologies: "UE5, C++, BP, Blender",
-            github: "NA",
-            link: "https://youtu.be/9Mzowr1QtWc?si=K16nsFTotFDCJUOT"
-        },
+        // {
+        //     title: "Classy",
+        //     images: "../classy.png",
+        //     description: "3D video game about a monkey who accidentally traveled space to a new planet. Will he survive?",
+        //     technologies: "UE5, C++, BP, Blender",
+        //     github: "NA",
+        //     videolink: "https://youtu.be/9Mzowr1QtWc?si=K16nsFTotFDCJUOT",
+        //     link: "NA"
+        // },
     ],
 
     personal: [
